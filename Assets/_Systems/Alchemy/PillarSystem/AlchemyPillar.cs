@@ -49,15 +49,15 @@ public class AlchemyPillar : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player")){
+        if (collision.gameObject.CompareTag("Player") && Vector3.Dot(collision.contacts[0].normal, Vector3.up) > 0.5f){
             playerRiding = true;
         }
     }
 
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player")){
-            //playerRiding = false;
-        }
-    }
+    //private void OnCollisionExit(Collision collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Player")){
+    //        //playerRiding = false;
+    //    }
+    //}
 }

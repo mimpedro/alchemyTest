@@ -79,6 +79,8 @@ public class AlchemyWeapon : MonoBehaviour
 
     public void CreatePillar(RaycastHit hit)
     {
+        var ss = hit.collider.GetComponent<SuperStone>();
+        if (ss != null) ss.SetReady(false);
         GameObject newPillarObj = AlchemyPillarPool.instance.CreatePillar(hit.point, hit.normal, hit.collider.tag);
 
         currentPillar = newPillarObj.GetComponent<AlchemyPillar>();
@@ -90,7 +92,7 @@ public class AlchemyWeapon : MonoBehaviour
         Vector3 gesture = (transform.position - XRRig.instance.transform.position) - initialHandPosition;
         Vector3 gestureOnNormal = Vector3.Project(gesture, currentPillar.transform.up);
         float sign = Mathf.Sign(Vector3.Dot(gesture, currentPillar.transform.up));
-        float distanceMultiplier = gestureMultiplierByDistance.Evaluate(Vector3.Distance(initialHandPosition, currentPillar.transform.position));
+        float distanceMultiplier = currentPillar.maxHeight * gestureMultiplierByDistance.Evaluate(Vector3.Distance(initialHandPosition, currentPillar.transform.position));
         return gestureOnNormal.magnitude * sign * distanceMultiplier;
     }
 }

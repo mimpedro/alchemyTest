@@ -33,6 +33,8 @@ public class AlchemyPillarPool : MonoBehaviour
     {
         switch (surfaceTag)
         {
+            case "SuperStone":
+                return pillarTypes[2];
             case "Stone":
                 return pillarTypes[1];
             default:
