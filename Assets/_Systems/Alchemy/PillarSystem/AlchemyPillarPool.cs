@@ -21,16 +21,30 @@ public class AlchemyPillarPool : MonoBehaviour
     }
     #endregion
     public int poolSize;
-    public List<AlchemyPillar> pool;
+    public GameObject[] pillarTypes;
+    //public List<AlchemyPillar> pool;
 
     void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public GameObject GetPillarBySurfaceTag(string surfaceTag)
     {
-        
+        switch (surfaceTag)
+        {
+            case "Stone":
+                return pillarTypes[1];
+            default:
+                return pillarTypes[0];
+        }
+    }
+
+    public GameObject CreatePillar(Vector3 position, Vector3 normal, string tag)
+    {
+        GameObject newPillarObj = Instantiate(GetPillarBySurfaceTag(tag));
+        newPillarObj.transform.position = position;
+        newPillarObj.transform.up = normal;
+        return newPillarObj;
     }
 }

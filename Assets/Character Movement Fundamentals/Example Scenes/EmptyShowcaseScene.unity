@@ -830,7 +830,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-217198
+  m_Name: pb_Mesh-1542
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2667,26 +2667,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 236322243, guid: 98ab3cf4bc2752641b6243510e614345, type: 3}
-      propertyPath: jumpKey
-      value: 330
-      objectReference: {fileID: 0}
-    - target: {fileID: 236322244, guid: 98ab3cf4bc2752641b6243510e614345, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 236322244, guid: 98ab3cf4bc2752641b6243510e614345, type: 3}
-      propertyPath: jumpSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 236322244, guid: 98ab3cf4bc2752641b6243510e614345, type: 3}
-      propertyPath: movementSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 236322244, guid: 98ab3cf4bc2752641b6243510e614345, type: 3}
-      propertyPath: airFriction
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1529652667286224265, guid: 98ab3cf4bc2752641b6243510e614345,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2746,11 +2726,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1529652667827575167, guid: 98ab3cf4bc2752641b6243510e614345,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2382398167343222553, guid: 98ab3cf4bc2752641b6243510e614345,
         type: 3}
@@ -12122,7 +12097,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-217196
+  m_Name: pb_Mesh-1538
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

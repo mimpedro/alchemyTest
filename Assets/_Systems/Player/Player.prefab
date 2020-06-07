@@ -212,11 +212,11 @@ CapsuleCollider:
   m_GameObject: {fileID: 1529652667286224311}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 1.5
+  m_Height: 1.2750001
   m_Direction: 1
-  m_Center: {x: 0, y: 1.25, z: 0}
+  m_Center: {x: 0, y: 1.0625, z: 0}
 --- !u!114 &236322243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,7 +231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalInputAxis: Horizontal
   verticalInputAxis: Vertical
-  jumpKey: 350
+  jumpKey: 330
   useRawInput: 1
   deadZoneThreshold: 0.2
 --- !u!114 &236322244
@@ -246,15 +246,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f5e44db14072ea4c964da3b192181c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 7
+  movementSpeed: 5
   airControl: 0.4
-  jumpSpeed: 10
+  jumpSpeed: 3
   jumpDuration: 0.2
-  airFriction: 0.5
+  airFriction: 1
   groundFriction: 100
   gravity: 30
   slideGravity: 5
-  slopeLimit: 80
+  slopeLimit: 60
   useLocalMomentum: 1
   cameraTransform: {fileID: 1529652667414625757}
 --- !u!114 &236322246
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepHeightRatio: 0.25
-  colliderHeight: 2
+  colliderHeight: 1.7
   colliderThickness: 1
   colliderOffset: {x: 0, y: 0.5, z: 0}
   sensorType: 0
@@ -456,7 +456,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1529652667827575166
 Transform:
   m_ObjectHideFlags: 0

@@ -47,19 +47,6 @@ public class AlchemyPillar : MonoBehaviour
         timer = 0;
     }
 
-    public void ReadSurfaceTag(string surfaceTag)
-    {
-        Debug.Log(surfaceTag);
-        if (surfaceTag == "Stone")
-        {
-            maxHeight = 3;
-        }
-        else
-        {
-            maxHeight = 1;
-        }
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player")){

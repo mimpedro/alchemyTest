@@ -6,7 +6,7 @@ public class AlchemyWeapon : MonoBehaviour
 {
     public float reach = 10f;
     public AnimationCurve gestureMultiplierByDistance;
-    public GameObject pillarPrefab;
+    //public GameObject pillarPrefab;
     public Reticle reticle;
     public string activateInputAxis;
     public LayerMask buildableLayerMask;
@@ -79,14 +79,9 @@ public class AlchemyWeapon : MonoBehaviour
 
     public void CreatePillar(RaycastHit hit)
     {
-        GameObject newPillarObj = Instantiate(pillarPrefab);
-        newPillarObj.transform.position = hit.point;
-        newPillarObj.transform.up = hit.normal;
+        GameObject newPillarObj = AlchemyPillarPool.instance.CreatePillar(hit.point, hit.normal, hit.collider.tag);
+
         currentPillar = newPillarObj.GetComponent<AlchemyPillar>();
-        currentPillar.ReadSurfaceTag(hit.collider.tag);
-        Debug.Log(hit.ToString());
-        Debug.Log(hit.collider.ToString());
-        //hit.collider.gameObject.SetActive(false);
         currentPillar.SetHeight(0);
     }
 
