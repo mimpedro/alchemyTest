@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 531598426889211555}
   - component: {fileID: 531598426889211548}
   - component: {fileID: 531598426889211549}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: OutsidePillar
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 36d13b1fa03ebe54aa05af5e19ca59b3, type: 2}
+  - {fileID: 2100000, guid: a6c7e51136cc9714f8d806609cbb49fd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
