@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 3792799045439036006}
   - component: {fileID: 3792799045439036007}
   - component: {fileID: 3346509468775277338}
-  m_Layer: 0
-  m_Name: SuperStone
-  m_TagString: Stone
+  m_Layer: 8
+  m_Name: SuperStone1x1
+  m_TagString: SuperStone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
