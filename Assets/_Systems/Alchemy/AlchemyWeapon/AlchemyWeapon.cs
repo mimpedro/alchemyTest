@@ -38,7 +38,7 @@ public class AlchemyWeapon : MonoBehaviour
                 RaycastHit hit;
                 Vector3 direction = transform.forward;
                 if (Vector3.Dot(direction, Vector3.down) > 0.8f) direction = Vector3.down;
-                if (Physics.Raycast(transform.position, transform.forward, out hit, reach, blockingLayerMask))
+                if (Physics.Raycast(transform.position, direction, out hit, reach, blockingLayerMask))
                 {
                     reticle.gameObject.SetActive(true);
                     reticle.transform.position = hit.point;

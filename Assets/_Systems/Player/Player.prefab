@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1224337970}
   - component: {fileID: 1224337971}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DropShadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 236322243}
   - component: {fileID: 236322244}
   - component: {fileID: 236322246}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -298,7 +298,7 @@ GameObject:
   - component: {fileID: 1529652667414625754}
   - component: {fileID: 1529652667414625755}
   - component: {fileID: 1529652667414625756}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Head
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -398,7 +398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1529652667547042564}
   - component: {fileID: 1529652667547042567}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LeftHand_Tracker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 1529652667827575166}
   - component: {fileID: 1529652667827575153}
   - component: {fileID: 673639938231814993}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Collider
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -508,7 +508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1529652668419802507}
   - component: {fileID: 1529652668419802506}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RightHand_Tracker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -558,7 +558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1529652668445839563}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Camera Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -589,7 +589,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3271447677116413210}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -622,7 +622,7 @@ GameObject:
   - component: {fileID: 6288892840385965215}
   - component: {fileID: 5262784842127323085}
   - component: {fileID: 6268554288081123773}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -699,7 +699,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4787197421104728915}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -732,7 +732,7 @@ GameObject:
   - component: {fileID: 1542533111231573539}
   - component: {fileID: 2200864925599578783}
   - component: {fileID: 7830384901460339540}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -867,10 +867,20 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5936184339382617162, guid: 66b9b0a86922b414ab4e6350f3a038a1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6183156441287450805, guid: 66b9b0a86922b414ab4e6350f3a038a1,
         type: 3}
       propertyPath: m_Name
       value: ReticleL
+      objectReference: {fileID: 0}
+    - target: {fileID: 6183156441287450805, guid: 66b9b0a86922b414ab4e6350f3a038a1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66b9b0a86922b414ab4e6350f3a038a1, type: 3}
@@ -959,10 +969,20 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5936184339382617162, guid: 66b9b0a86922b414ab4e6350f3a038a1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6183156441287450805, guid: 66b9b0a86922b414ab4e6350f3a038a1,
         type: 3}
       propertyPath: m_Name
       value: ReticleR
+      objectReference: {fileID: 0}
+    - target: {fileID: 6183156441287450805, guid: 66b9b0a86922b414ab4e6350f3a038a1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66b9b0a86922b414ab4e6350f3a038a1, type: 3}
@@ -1046,6 +1066,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3965191309894630219, guid: 12cf9e066e7933a43afc5eac461aef2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4830274004678933815, guid: 12cf9e066e7933a43afc5eac461aef2e,
         type: 3}
       propertyPath: reticle
@@ -1060,6 +1085,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Weapon_R
+      objectReference: {fileID: 0}
+    - target: {fileID: 9029136367251200404, guid: 12cf9e066e7933a43afc5eac461aef2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12cf9e066e7933a43afc5eac461aef2e, type: 3}
@@ -1131,6 +1161,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3965191309894630219, guid: 12cf9e066e7933a43afc5eac461aef2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4830274004678933815, guid: 12cf9e066e7933a43afc5eac461aef2e,
         type: 3}
       propertyPath: reticle
@@ -1140,6 +1175,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Weapon_L
+      objectReference: {fileID: 0}
+    - target: {fileID: 9029136367251200404, guid: 12cf9e066e7933a43afc5eac461aef2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12cf9e066e7933a43afc5eac461aef2e, type: 3}
